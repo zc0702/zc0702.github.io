@@ -92,7 +92,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="video mp4 流媒体," />
+  <meta name="keywords" content="video,mp4,流媒体," />
 
 
 
@@ -108,17 +108,17 @@
 
 
 
-<meta name="description" content="目前视频网站越来越多，为了兼容各种硬件设备，视频网站大都选择使用mp4格式的视频文件。 播放器在播放视频文件之前，需要获取视频文件的 metadata，而大部分 mp4 都把 metadata 信息存在文件尾部（这就是为什么网上有的 mp4 在播放之前，需要等待文件全部加载完成后，才能播放）。 所以如果要实现快速播放 mp4，就需要将 mp4 进行流化处理，也就是将 mp4 的 metadata">
-<meta name="keywords" content="video mp4 流媒体">
+<meta name="description" content="目前视频网站越来越多，为了兼容各种硬件设备，视频网站大都选择使用mp4格式的视频文件。 播放器在播放视频文件之前，需要获取视频文件的 metadata，而大部分 mp4 都把 metadata 信息存在文件尾部（这就是为什么网上有的 mp4 在播放之前，需要等待文件全部加载完成后，才能播放）。">
+<meta name="keywords" content="video,mp4,流媒体">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mp4流化">
 <meta property="og:url" content="http://zc0702.github.io/2017/04/21/mp4流化/index.html">
 <meta property="og:site_name" content="Startup">
-<meta property="og:description" content="目前视频网站越来越多，为了兼容各种硬件设备，视频网站大都选择使用mp4格式的视频文件。 播放器在播放视频文件之前，需要获取视频文件的 metadata，而大部分 mp4 都把 metadata 信息存在文件尾部（这就是为什么网上有的 mp4 在播放之前，需要等待文件全部加载完成后，才能播放）。 所以如果要实现快速播放 mp4，就需要将 mp4 进行流化处理，也就是将 mp4 的 metadata">
-<meta property="og:updated_time" content="2017-04-21T07:09:03.000Z">
+<meta property="og:description" content="目前视频网站越来越多，为了兼容各种硬件设备，视频网站大都选择使用mp4格式的视频文件。 播放器在播放视频文件之前，需要获取视频文件的 metadata，而大部分 mp4 都把 metadata 信息存在文件尾部（这就是为什么网上有的 mp4 在播放之前，需要等待文件全部加载完成后，才能播放）。">
+<meta property="og:updated_time" content="2017-04-21T09:11:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mp4流化">
-<meta name="twitter:description" content="目前视频网站越来越多，为了兼容各种硬件设备，视频网站大都选择使用mp4格式的视频文件。 播放器在播放视频文件之前，需要获取视频文件的 metadata，而大部分 mp4 都把 metadata 信息存在文件尾部（这就是为什么网上有的 mp4 在播放之前，需要等待文件全部加载完成后，才能播放）。 所以如果要实现快速播放 mp4，就需要将 mp4 进行流化处理，也就是将 mp4 的 metadata">
+<meta name="twitter:description" content="目前视频网站越来越多，为了兼容各种硬件设备，视频网站大都选择使用mp4格式的视频文件。 播放器在播放视频文件之前，需要获取视频文件的 metadata，而大部分 mp4 都把 metadata 信息存在文件尾部（这就是为什么网上有的 mp4 在播放之前，需要等待文件全部加载完成后，才能播放）。">
 
 
 
@@ -372,6 +372,39 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/video/" itemprop="url" rel="index">
+                    <span itemprop="name">video</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/video/流媒体/" itemprop="url" rel="index">
+                    <span itemprop="name">流媒体</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -397,8 +430,7 @@
 
       
         <p>目前视频网站越来越多，为了兼容各种硬件设备，视频网站大都选择使用mp4格式的视频文件。</p>
-<p>播放器在播放视频文件之前，需要获取视频文件的 metadata，而大部分 mp4 都把 metadata 信息存在文件尾部（这就是为什么网上有的 mp4 在播放之前，需要等待文件全部加载完成后，才能播放）。</p>
-<p>所以如果要实现快速播放 mp4，就需要将 mp4 进行流化处理，也就是将 mp4 的 metadata 放到文件头部，这样播放器就可以在读取完 metadata 后，就开始进行播放。</p>
+<p>播放器在播放视频文件之前，需要获取视频文件的 metadata，而大部分 mp4 都把 metadata 信息存在文件尾部（这就是为什么网上有的 mp4 在播放之前，需要等待文件全部加载完成后，才能播放）。<br><a id="more"></a><br>所以如果要实现快速播放 mp4，就需要将 mp4 进行流化处理，也就是将 mp4 的 metadata 放到文件头部，这样播放器就可以在读取完 metadata 后，就开始进行播放。</p>
 <p>做流化处理，我们可以使用 qt-faststart 工具。</p>
 <ul>
 <li>直接使用 qt-faststart</li>
@@ -443,7 +475,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/video-mp4-流媒体/" rel="tag"># video mp4 流媒体</a>
+            <a href="/tags/video/" rel="tag"># video</a>
+          
+            <a href="/tags/mp4/" rel="tag"># mp4</a>
+          
+            <a href="/tags/流媒体/" rel="tag"># 流媒体</a>
           
         </div>
       
@@ -455,10 +491,6 @@
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
-            
-              <a href="/2017/04/21/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
             
           </div>
 
@@ -561,13 +593,22 @@
           
 
           
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
 
           
             
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -583,7 +624,7 @@
               <span class="links-of-author-item">
                 <a href="https://github.com/zc0702" target="_blank" title="GitHub">
                   
-                    <i class="fa fa-fw fa-github"></i>
+                    <i class="fa fa-fw fa-globe"></i>
                   
                   GitHub
                 </a>
@@ -592,7 +633,7 @@
               <span class="links-of-author-item">
                 <a href="http://weibo.com/zhangchu0702" target="_blank" title="Weibo">
                   
-                    <i class="fa fa-fw fa-weibo"></i>
+                    <i class="fa fa-fw fa-globe"></i>
                   
                   Weibo
                 </a>
